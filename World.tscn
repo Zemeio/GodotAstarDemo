@@ -129,9 +129,11 @@ draw_grid = false
 draw_astar = false
 
 [node name="Sprite" type="Sprite" parent="."]
+visible = false
 position = Vector2( 8, 8 )
 scale = Vector2( 0.24785, 0.24785 )
 texture = ExtResource( 6 )
+centered = false
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
