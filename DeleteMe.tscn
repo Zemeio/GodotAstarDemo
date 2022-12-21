@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="AnimationNodeTransition" id=1]
+
+[sub_resource type="AnimationNodeBlendTree" id=2]
+graph_offset = Vector2( -596, 71 )
+nodes/Movement/node = SubResource( 1 )
+nodes/Movement/position = Vector2( 115, 143 )
+
+[node name="Sprite" type="Sprite"]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 2 )
+parameters/Movement/current = 0
